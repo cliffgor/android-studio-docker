@@ -29,7 +29,7 @@ RUN dpkg --add-architecture i386 && \
 RUN \
   wget -O /opt/android-studio-ide.tar.gz $ANDROID_STUDIO_URL && \
   export sha="$(sha256sum /opt/android-studio-ide.tar.gz)" ; \
-  if [ "$sha" != "70c04dc542281c015a700fad73d7d62ce9dace774bc12050cad9f1d6363112eb  /opt/android-studio-ide.tar.gz" ]; then \
+  if [ "$sha" != "bd1aa17c7ef10066949c88dc6c9c8d536be27f992a1f3b5a584f9bd2ba5646a0  /opt/android-studio-ide.tar.gz" ]; then \
       echo "SHA-256 Checksum mismatch, aborting installation"; \
       rm -f /opt/android-studio-ide.tar.gz; exit 1; \
     else \
